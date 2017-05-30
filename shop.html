@@ -1,0 +1,299 @@
+<!-- declaration refers to a DTD-->
+<!DOCTYPE html>
+
+<!-- Specifiying HTML language has English-->
+<html lang="en">
+
+<!--Head element-->
+<head>
+	<!-- The <meta> tag provides metadata about the HTML and Specify the character encoding for the HTML -->
+	<meta charset="UTF-8">
+	<!-- This meta tag provides metadata about the compatible with Internet explosers-->
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- Define a description of your web page -->
+	<meta name="description" content="Free Web tutorials">
+	<!--  Define keywords for search engines -->
+	<meta name="keywords" content="HTML,CSS,XML, XHTML,JavaScript">
+	<!-- Define the author of a page -->
+	<meta name="author" content="Gururaj">
+		<!-- Setting the viewport to make your website look good on all devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- It defines the title of the document-->
+	<title>HTML Form</title>
+	<!-- External styles 'myStyle.css' are linked with this html doc -->
+	<link rel='stylesheet' type='text/css' href='shop.css'>
+	<!-- The Style tag provides the internal or Embedded styles for HTML Doc-->
+	<style type="text/css">
+	 /* This block put the body styles with style sheet ofimage from the provided url link */
+	body  {
+		background-image: url("https://tctechcrunch2011.files.wordpress.com/2016/06/softwareworld.jpg?w=738");  /* Url which fetch the background image*/
+		background-color: #cccccc; 																				/* Body background color */
+		background-repeat: no-repeat; 																			/* not repeating the  background image*/
+		background-attachment: fixed; 																			/* Body background image fixed*/
+		background-position: center;  																			/* Body background image align to center of doc */
+		background-size: 660px 690px; 																			/* background image hight and width*/
+	}
+	 /* Set the Your details object styles on html Doc  */
+	#div { 
+        position:absolute; 								/* div in html having absolute position*/
+        top:2px; left:27%; 								/* specify the div location spacing of 2px from top and 27% of html doc*/
+		color:#fff; 									/* white color */
+		margin-bottom:3px; 								/* leveing 3px spcae from bottom*/
+    }
+	 /* Set the Name fieldd in the html Doc */
+ 	#div1 { 
+        position:absolute; 								/* div in html having absolute position*/
+        top:40px; left:370px; 							/* specify the div location spacing of 40px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.9); 	/* setting div background color to light-blue */
+        padding:1px 1px; 								/* padding  top amd left by 1px*/
+        border:2px solid #fff; 							/* border of div with 2px solid white */
+		border-radius: .5em; 							/* div border curve with radius */
+        width:45%; 										/* specify Div width 45% from thr html Doc */
+		margin-bottom:3px;								/*leveing 3px spcae from bottom */
+	}
+	 /* Set the Email filed object on thml Doc*/
+	#div2 { 
+        position:absolute; 								/* div in html having absolute position*/
+        top:95px; left:370px; 							/* specify the div location spacing of 95px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.9);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff; 							/* border of div with 2px solid white */
+		border-radius: .5em; 							/* div border curve with radius */
+        width:45%;  									/* specify Div width 45% from thr html Doc */
+    }
+	 /* Set the Emailobject field on the html doc */
+	#div3 { 
+        position:absolute; 								/* div in html having absolute position*/
+        top:150px; left:370px; 							/* specify the div location spacing of 150px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.9); 	/* setting div background color to light-blue */
+        padding:1px 1px; 								/* padding  top amd left by 1px*/
+        border:2px solid #fff; 							/* border of div with 2px solid white */
+		border-radius: .5em; 							/* div border curve with radius */
+        width:45%;  									/* specify Div width 45% from thr html Doc */ 
+    }
+     /* Set the Delivery Address filed object on html doc */
+	#div4{
+		position:absolute; 								/* div in html having absolute position*/
+        top:200px; left:370px; 							/* specify the div location spacing of 150px from top and 370px left of html doc*/
+		color:#fff; 									/* white color */
+		margin-bottom:3px;								/* leveing 3px spcae from bottom*/
+	}
+	 /* Set the Address tag object int div for user on html doc*/
+	#div5 { 
+		position:absolute; 								/* div in html having absolute position*/
+        top:240px; left:370px; 							/* specify the div location spacing of 240px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em;							/* div border curve with radius */
+        width:45%;										/* specify Div width 45% from thr html Doc */ 
+    }
+	 /* Div 5 with text area for multiple line feed address of user in hmtl doc */
+	textarea {
+		position: absolute;								/* div in html having absolute position*/
+		left: 155px; 									/* Specifiying text-area inside the div5 with left padding 155px on html doc*/
+		top: 5px;										/* Specifiying text-area inside the div5 with top padding 5px on html doc*/
+		right: 5px; 									/* Specifiying text-area inside the div5 with right padding 5px on html doc*/
+		bottom: 5px;									/* Specifiying text-area inside the div5 with bottom padding 5px on html doc*/
+		border-radius: .5em;							/* div border curve with radius */
+		width:275px;									/* specify Div width 275px from thr html Doc */
+	}
+	 /* This style set the div for postcode of the user on html doc*/
+	#div6 { 
+		position:absolute; 								/* div in html having absolute position*/
+        top:340px; left:370px; 							/* specify the div location spacing of 340px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em;							/* div border curve with radius */
+        width:45%;										/* specify Div width 45% from thr html Doc */ 
+    }
+	 /* This internal style set the contry placeholder on thml doc */
+	#div7 { 
+		position:absolute; 								/* div in html having absolute position*/
+        top:395px; left:370px; 							/* specify the div location spacing of 395px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em;							/* div border curve with radius */
+        width:45%;										/* specify Div width 45% from thr html Doc */ 
+    }
+	 /* This set the title of card details on thml doc*/
+	#div8{
+		position:absolute; 								/* div in html having absolute position*/
+        top:442px; left:370px; 							/* specify the div location spacing of 442px from top and 370px left of html doc*/
+		color:#fff; 									/* border of div solid white */
+		margin-bottom:3px;								/* leveing 3px spcae from bottom*/
+	}
+	 /* This sets the div od the Card type on div for user to select debit card on html odc*/
+	#div9 { 
+        position:absolute; 								/* div in html having absolute position*/
+        top:485px; left:370px; 							/* specify the div location spacing of 485px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em;							/* div border curve with radius */
+        width:45%;										/* specify Div width 45% from thr html Doc */  
+    }
+	 /* This sets the div with place holder for user to feed card number on thml doc */
+	#div10 { 
+		position:absolute; 								/* div in html having absolute position*/
+        top:552px; left:370px; 							/* specify the div location spacing of 552px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em;							/* div border curve with radius */
+        width:45%;										/* specify Div width 45% from thr html Doc */ 
+    }
+	/* This sets the div with placeholder for user to feed security code on html doc */
+	#div11 { 
+		position:absolute; 								/* div in html having absolute position*/
+        top:607px; left:370px; 							/* specify the div location spacing of 607px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em;							/* div border curve with radius */
+        width:45%;										/* specify Div width 45% from thr html Doc */ 
+    }
+	 /* This set the style on html doc foruser to feed on name which is same as on card*/
+	#div12 { 
+		position:absolute; 								/* div in html having absolute position*/
+        top:662px; left:370px; 							/* specify the div location spacing of 662px from top and 370px left of html doc*/
+        background-color: rgba(200, 200, 255, 0.8);		/* setting div background color to light-blue */
+        padding:1px 1px;								/* padding  top amd left by 1px*/
+        border:2px solid #fff;							/* border of div with 2px solid white */
+		border-radius: .5em; 							/* div border curve with radius */
+        width:45%;
+    }
+	 /* This style set the style propery of button on html */
+	#div13{
+		position:absolute; 								/* div in html having absolute position*/
+        top:715px; left:370px; 							/* specify the div location spacing of 715px from top and 370px left of html doc*/
+		color:#fff; 									/* border of div solid white */
+		margin-bottom:3px;								/* leveing 3px spcae from bottom*/
+	}
+	</style>
+	
+</head>
+<!-- Body of the html starts from here with internal style-->
+<body>
+<!-- Form of the body starts here -->
+<form>
+	<!-- div with div id set the internal style on html doc that user details title -->
+	<div id="div">
+		<!-- Paragraph that say title about user details-->
+		<p><b>Step 1: Your details </b></P>
+	</div>
+	<!-- div with div1 sets the internal style with inlinestyle of 45px height-->
+	<div id="div1" style="height: 45px">
+	<form>
+		  <!-- lable with input having place holder to feed his/her name -->
+		  <label ><b>Name </b> <span style="padding-left:100px;"></span><input type="text" name="name" size="30" maxlength="100"  placeholder="First and Last Name" /></label>
+	</form>
+	</div>
+	<!-- This div with div id div2 and having internal style of height 45px for user email field on html doc-->
+	<div id="div2" style="height: 45px">
+	<form>
+		<!-- Inside the Div with form field have Email placeholder with lable for user on html doc along with span to set space between label and placeholder-->
+		<label ><b>Email </b> <span style="padding-left:100px;"></span><input type="text" name="comp-name" size="30" maxlength="100" placeholder="example@domain.com"></label>
+	</form>
+	</div>
+	<!-- This div with div id div3 and having internal style of height 45px for user phone number field on html doc-->
+	<div id="div3" style="height: 45px"">
+	<form>
+		<!-- label with input form along with span to set space between label and placeholder for user to feed his/her phone number -->
+		<label ><b>Phone   </b><span style="padding-left:100px;"></span><input type="text" name="name" size="30" maxlength="100"  placeholder="+0123456789" /></label>
+	</form>
+	</div>
+	<!-- This div tag with id div4 for user delivery address title on html doc-->
+	<div id="div4">
+		<!-- Paragraph with content bold -->
+		<p><b>Step 2: Delivery Address </b></P>
+	</div>
+	<!-- div with div id div5 sets the internal styles with inline style of 90px height-->
+	<div id="div5" style="height: 90px">
+	<form>
+		<!-- label with textarea using form for user to feed his/her address-->
+		<label for="Address"><b>Address </b></label>
+		<!-- textarea inline with number of row and coloumn -->
+        <textarea style="display: block;" rows="4" cols="40" name="comment" form="usrform">Enter text here...</textarea>
+    </form>
+	</div>
+	
+	<!-- div with id div6 along with internal style of 45px height-->
+	<div id="div6" style="height: 45px">
+	<form>
+		<!-- label with input form along with span to set space between label and placeholder for postcode of his/her -->
+		  <label ><b>Post code </b>  <span style="padding-left:85px;"></span><input type="text" name="name" size="30" maxlength="100"   /></label>
+	</form>
+	</div>
+	<!-- div with id div7 along with internal style of height 45px for contry -->
+	<div id="div7" style="height: 45px">
+	<form>
+		<!-- label with placeholder and having span for spacing between label and placeholder of 95px-->
+		  <label ><b>Country </b>  <span style="padding-left:95px;"></span><input type="text" name="name" size="30" maxlength="100"  /></label>
+	</form>
+	</div>
+	<!-- div with id div8 sets the title of the div on html doc-->
+	<div id="div8">
+	<!-- div with title name for user interaction on html doc-->
+		<p><b>Step 3: Card details </b></P>
+	</div>
+		<!-- div with id div9 sets the internal style of html doc-->
+	 <div id="div9">
+		<!-- label with inline style of vertical align of div name on thml doc-->
+		<label style="vertical-align:top";><b>Card Type</b> </label>
+		<!-- input with radio button for card selection on html doc-->
+		<input id="visa" type="radio" name="credit-card" value="visa" />
+		<!-- input with radio button for card selection on html doc -->
+        <label for="a1">Visa</label>
+		<!-- input with radio button for card selection with class drinkcard-cc to hover on html doc-->
+        <label class="drinkcard-cc visa" for="visa"></label>
+        <!-- input with radio button for card selection on html doc8-->
+        <input id="mastercard" type="radio" name="credit-card" value="mastercard" />
+		<!-- input with radio button for card selection on html doc-->
+        <label for="a2">Mastercard</label>
+		<!-- input with radio button for card selection with class drinkcard-cc to hover on html doc-->
+        <label class="drinkcard-cc mastercard"for="mastercard"></label>
+		<!-- input with radio button for card selection on html doc-->
+        <input id="Amex" type="radio" name="credit-card" value="Amex" />
+		<!-- input with radio button for card selection on html doc-->
+        <label for="a2">American Express</label>
+		<!-- input with radio button for card selection with class drinkcard-cc to hover on html doc-->
+        <label class="drinkcard-cc Amex"for="Amex"></label>
+    </div>
+	<!-- div with id ddiv10 setinternal style along with inline style of 45px on div -->
+	<div id="div10" style="height: 45px">
+	<form>
+	<!-- label with input place holder to set his/her card number on div of html doc-->
+		  <label ><b>Card Number </b> <span style="padding-left:60px;"></span> <input type="text" name="name" size="30" maxlength="100"   /></label>
+	</form>
+	</div>
+	<!-- div with id div11 setting inline style of 45px on div of html doc-->
+	<div id="div11" style="height: 45px">
+	<form>
+		<!-- label and placeholder for user to feen input of security code of his/het on html doc -->
+		 <label ><b>Security Code </b> <span style="padding-left:60px;"></span> <input type="text" name="name" size="30" maxlength="100"   /></label>
+	</form>
+	</div>
+	<!-- div with id div12 setting internal style with 45px height on inline style of this div on html doc-->
+	<div id="div12" style="height: 45px">
+	<form>
+	<!-- label with lace holder to provide user card number on div of html doc-->
+		  <label > <b>Name on card</b>  <span style="padding-left:60px;"></span> <input type="text" name="name" size="30" maxlength="100"  placeholder="exact name on the card" /></label>
+	</form>
+	</div>
+	<!-- div with id div13 setting internal style with 45px height on inline style of this div on html doc-->
+	<div id="div13" style="height: 45px">
+	<form>
+	<!-- Place button with refering class of button for external custom style on html doc-->
+		<button class="button button"><b>BUY IT!<b></button>
+	</form>
+	</div>
+	<!-- form of html doc ends here-->
+</form>
+<!-- Body of the html doc ends here-->
+</body>
+<!-- Html ends here-->
+</html>
+

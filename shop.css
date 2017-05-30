@@ -1,0 +1,89 @@
+/* label and input style on html doc*/
+label , label>input{
+    font-size: 15px; 					 /* internal font size*/
+    display: inline-block;				 /* label & input block align */
+    margin: 1px;						 /* label  location on div */
+    line-height: 22px;					 /* label line height on div */
+	padding-top: 3px;					 /* label padding top on div */
+    height: 15px;						 /* label height on div */
+    vertical-align: middle;				 /* label vertical align on div */
+	text-align: left-middle;  			 /* label text align on div */
+	border-radius: .3em;				 /* input curve style and its radius */
+	padding-left:5px;					 /* lable padding left on html doc */
+	padding-bottom: 12px; 				 /* lable & input bottom padding on html doc*/
+}
+/* button style on html doc*/
+button {
+    background-color: #0F1FFF;			 /* sets backgroung blue */
+    border: none; 						 /* Border style none */
+    color: white;						 /* border color white*/
+    padding: 10px 30px;					 /* padding of the button left & top*/
+    text-align: center;					 /* button internal text -align center*/
+    text-decoration: none;				 /* button text decoration none*/
+    display: inline-block;				 /* button block align */
+    font-size: 12px;					 /* button internal font size*/
+    margin: 5px 250px;					 /* button location on div */
+    cursor: pointer;					 /* cusore style when on button*/
+	border-radius: 26px;				 /* button curve style and its radius */
+	float:center;						 /* button position*/
+	
+}
+
+/* Visa card background image png using following from url*/
+.visa{
+	background-image: url(http://www.pngall.com/wp-content/uploads/2017/05/Visa-Logo-PNG-Clipart.png);
+	
+}
+/* Mastercard background image png using following from url*/
+.mastercard{
+	background-image: url(http://sampsonics.com/wp-content/uploads/2012/06/mastercard_512.png);
+}
+/* American express card background image png using following from url*/
+.Amex{
+	background-image: url(https://img.clipartfest.com/2d87cfca12e15d2cecf81db9882971b1_american-express-clipart-clipart-american-express-logo_900-900.png);
+}
+/* by-default image apperance on image when html loads */
+.cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{
+		opacity: 1;
+}
+/* by-default image apperance on image when html loads */	
+.cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;				/* web-ket filter set none*/
+       -moz-filter: none;				/* for mozila kit filter set to none*/
+            filter: none;				/* for usual normal web browser set filet none*/
+}
+/* by-default image apperance on image when html loads */
+.drinkcard-cc{
+	 padding:10px 10px;											/* padding 10px left and 10px bottom */								
+    cursor:pointer;												/* Setting cursor pointer */
+    background-size:contain;									/* setting background size */	
+    background-repeat:no-repeat;								/* setting background style no repeat */
+    display:inline-block;										/* setting display inline-block */
+    width:35px;height:35px;										/* seting width and height */
+    -webkit-transition: all 100ms ease-in;						/* setting webkit for browsers like IE/google chrome*/
+    -moz-transition: all 100ms ease-in;							/* setting webkit of mozilla */
+    transition: all 100ms ease-in;								/* setting transition */
+    -webkit-filter: brightness(0.9) grayscale(0) opacity(.9);	/* setting webkit filter with brightness grayscale and opacity of icon of cards*/
+    -moz-filter: brightness(0.9) grayscale(0) opacity(.9);		/* setting mozilla kit filter with brightness grayscale and opacity of icon of cards*/
+    filter: brightness(0.9) grayscale(0) opacity(.9);			/* setting filter */
+}
+/* hover of the particular image of div when mouse moveon it/point on it */
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);	/* setting webkit filter with brightness grayscale and opacity of icon of cards*/
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);	/* setting mozilla kit filter with brightness grayscale and opacity of icon of cards*/
+            filter: brightness(1.2) grayscale(.5) opacity(.9);	/* setting filter */
+}
+
+/* Extras color set for label of div*/
+a:visited{
+	color:#888
+}
+/* setting color with text decoration none*/
+a{
+	color:#444;
+	text-decoration:none;     
+}
+/* setting margin bottom */
+p{
+	margin-bottom:3em;
+}
